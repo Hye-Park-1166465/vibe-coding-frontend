@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { fetchTodos, createTodo, updateTodo, deleteTodo } from './api';
 import './App.css';
 
+// 환경변수에서 API_URL 읽기
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/todos';
+
 function App() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(false);

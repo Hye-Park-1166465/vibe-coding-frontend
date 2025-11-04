@@ -1,5 +1,5 @@
 // 환경변수에서 API URL 가져오기, 없으면 기본값 사용
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/todos';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/todos';
 
 // 모든 TODO 가져오기
 export const fetchTodos = async () => {
